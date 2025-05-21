@@ -1,0 +1,22 @@
+.global-header {
+    background: white;
+    padding: 15px 20px;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .global-nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .global-nav a:hover,
+  .global-nav a.active {
+    color: #489e9a;
+  }
+  

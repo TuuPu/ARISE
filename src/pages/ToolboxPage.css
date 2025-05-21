@@ -1,0 +1,420 @@
+/* Full Page Layout */
+.toolbox-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Left Menu (Teal) */
+.left-menu {
+  width: 25%;
+  background: radial-gradient(circle at top left, #387d79, #489e9a 40%, #6ac2be);
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.left-menu h2 {
+  text-align: center;
+}
+
+.left-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.left-menu li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.left-menu li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.center-content {
+  flex-grow: 1;
+  background: radial-gradient(circle at top left, #6ac2be, #489e9a 40%, #387d79);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  overflow-y: auto;
+  max-height: 100vh;
+  padding-top: 0;
+}
+
+.center-content .intro-text,
+.center-content p {
+  max-width: 900px;
+  width: 100%;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+/* Right Expandable Menu (Orange) NOT IN USE
+.right-menu {
+  width: 5%;
+  background: orange;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ */
+
+.right-menu.expanded {
+  width: 25%;
+  align-items: flex-start;
+}
+
+.right-menu .menu-header {
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.right-menu ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+}
+
+.right-menu li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align: center;
+}
+
+.right-menu li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Use Case Library */
+.use-case-library {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 90%;
+  padding: 12px;
+  margin: 15px 0;
+  font-size: 16px;
+  border: 2px solid #489e9a;
+  border-radius: 8px;
+  outline: none;
+}
+
+.search-bar:focus {
+  border-color: purple;
+}
+
+/* Use Case List */
+.use-case-list {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Individual Use Case */
+.use-case-item {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Remove hover effect from expanded box */
+.use-case-item.expanded:hover {
+  background: white !important;
+}
+
+/* Use Case Title */
+.use-case-title {
+  font-size: 18px;
+  color: #489e9a;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Expanded use-case item should always have a white background */
+.use-case-item.expanded {
+  background: white !important;
+  padding: 20px;
+  border: 1px solid #489e9a;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 95%;  /* Leaves minimal space on the sides */
+  width: 95%;
+  text-align: justify;
+  overflow: hidden; /* Ensures title stays visible */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollable content inside the expanded use case */
+.use-case-content {
+  color: black;
+  font-size: 12px; /* Smaller text for readability */
+  line-height: 1.6;
+  max-width: 100%;
+  word-wrap: break-word;
+  padding: 15px;
+  overflow-y: auto; /* Allows scrolling within the box */
+  max-height: 50vh; /* Keeps title visible while making content scrollable */
+}
+
+/* Line breaks between paragraphs */
+.use-case-content p {
+  margin-bottom: 10px;
+}
+
+/* Table Styling */
+.use-case-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.use-case-table th,
+.use-case-table td {
+  border: 1px solid #489e9a;
+  padding: 8px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.use-case-table th {
+  background: #489e9a;
+  color: white;
+}
+
+/* Ethical Concerns List */
+.use-case-content ul {
+  padding-left: 15px;
+}
+
+.use-case-content ul li {
+  margin-bottom: 10px;
+  font-size: 14px; 
+  line-height: 1.5;
+}
+
+/* Expanded Use Case Item */
+.use-case-item.expanded {
+  background: white !important;
+  padding: 20px;
+  border: 1px solid #489e9a;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 95%; /* ✅ Expands to nearly full width */
+  width: 95%;
+  text-align: justify;
+  overflow: hidden; /* Ensures title stays visible */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Expanded Content Scrollable */
+.use-case-content {
+  color: black;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 100%;
+  word-wrap: break-word;
+  padding: 15px;
+  overflow-y: auto; /* Allows scrolling within the box */
+  max-height: 50vh; /* Keeps title visible while making content scrollable */
+}
+
+.use-case-text {
+  font-size: 13px; /* ✅ Smaller font size */
+  line-height: 1.5;
+  width: 100%; /* ✅ Full width */
+  max-width: 100%; /* ✅ Prevents shrinking */
+  text-align: left; /* ✅ Aligns to left */
+  word-wrap: break-word; /* ✅ Prevents words from breaking layout */
+  margin-bottom: 10px; /* ✅ Adds spacing between paragraphs */
+}
+
+/* Title Formatting */
+.use-case-title {
+  font-size: 18px;
+  color: #489e9a;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Table Styling */
+.use-case-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.use-case-table th,
+.use-case-table td {
+  border: 1px solid #489e9a;
+  padding: 8px;
+  text-align: left;
+  font-size: 13px; /* ✅ Match font size */
+}
+
+.use-case-table th {
+  background: #489e9a;
+  color: white;
+}
+
+/* Ethical Concerns List */
+.use-case-content ul {
+  padding-left: 15px;
+}
+
+.use-case-content ul li {
+  margin-bottom: 10px;
+  font-size: 13px; /* ✅ Smaller font for better readability */
+  line-height: 1.5;
+}
+
+/* Submenu Styling */
+.submenu {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.submenu li {
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+  color: white;
+}
+
+.submenu li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Center Content Styling */
+.sub-menu-text {
+  font-size: 13px;
+  line-height: 1.5;
+  max-width: 90%;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.submenu li.active {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #ffa500;
+  color: white;
+  border-left: 5px solid #fff;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 16px 24px;
+  width: 100%;
+  z-index: 10;
+
+  background: linear-gradient(to right, rgba(72, 158, 154, 0.8), rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(15px);
+  color: #f0f0f0;
+  border-radius: 0 0 16px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.sticky-header h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: white !important;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.info-card {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+}
+
+.info-card h3 {
+  margin-top: 0;
+  color: #aa66cc;
+}
+
+.info-card p {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  animation: fadeInUp 0.5s ease-in both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-body {
+  color: black;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card-toggle-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #aa66cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card-toggle-button:hover {
+  background-color: #9339b5;
+}
