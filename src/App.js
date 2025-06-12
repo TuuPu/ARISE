@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import ToolboxPage from "./pages/ToolboxPage";
 import Header from "./components/Header";
+import Footer from "./components/Footer"; 
 import "./App.css";
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<LandingPage />} />
           <Route path="/toolbox" element={<ToolboxPage />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

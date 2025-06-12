@@ -26,12 +26,6 @@ const LandingPage = () => {
           <div className="explore-logo">LOGO</div>
         </section>
       </main>
-
-      {/* Footer Section */}
-      <footer className="footer">
-        <a href="https://demoshelsinki.fi" target="_blank" rel="noopener noreferrer">Demos Helsinki</a>
-        <p>ARISE project funded by EC (2024-2027)</p>
-      </footer>
     </div>
   );
 };
