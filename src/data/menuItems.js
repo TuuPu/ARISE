@@ -4,7 +4,7 @@ import React from "react";
 const menuItems = [
     {
       id: 1,
-      title: "Ethical Principles",
+      title: "ARISE HRI Ethical Principles",
       introText: (
         <>
           <p>In this first iteration of the ARISE SSH framework, we propose to simultaneously test out the more general level principles set out in the Ethics by Design framework as well as the more HRI and Industry 5.0 specific ethics principles set out in the framework consolidated by Callari et al. Our goal is to simultaneously have a strong and empirically grounded backing from the Ethics by Design Principles that has been built up during previous Horizon projects, as well as take into account especially more worker related and human-centric aspects that are brought about by the 30 field specific ethics experts in the Delphi study by Callari et al. and consolidated under the framework and its related ethics principles and associated requirements. </p>
@@ -76,14 +76,14 @@ const menuItems = [
         teaser: "The ARISE EIA process is divided into 6 distinct stages",
         text: <p>The ARISE EIA process is divided into 6 distinct stages, which are 1) Initial external review, 2) Ethics action plan, 3) Ethics mentoring, 4) Interim external review, 5) Ethics mentoring and roadmap for future use, and 6) Final external review. The EIA process including the six-stages is presented in Figure 6, followed by more detailed descriptions of each stage.</p>
       },
+      // {
+      //   id: "2.3",
+      //   title: "Regulatory Compliance",
+      //   teaser: "Lorem Ipsum",
+      //   text: <p>Lorem Ipsum</p>
+      // },
       {
         id: "2.3",
-        title: "Regulatory Compliance",
-        teaser: "Lorem Ipsum",
-        text: <p>Lorem Ipsum</p>
-      },
-      {
-        id: "2.4",
         title: "Case Studies",
         teaser: "Lorem Ipsum",
         text: <p>Lorem Ipsum</p>

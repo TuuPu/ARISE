@@ -2,11 +2,11 @@ import React, { useState, useRef } from "react";
 import "./ToolboxPage.css";
 import useCases from "../data/useCases";
 import menuItems from "../data/menuItems";
+import SideMenu from "../components/SideMenu";
 
 const ToolboxPage = () => {
   console.log("menuItems:", menuItems);
   const [selectedMenu, setSelectedMenu] = useState(null);
-  const [expandedSubmenu, setExpandedSubmenu] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [expandedUseCase, setExpandedUseCase] = useState(null);
   const sectionRefs = useRef({});
@@ -37,14 +37,7 @@ const ToolboxPage = () => {
     setExpandedCardId(expandedCardId === id ? null : id);
   };
 
-  const handleMenuClick = (menuItem) => {
-    setSelectedMenu(menuItem);
-    if (menuItem.subItems) {
-      setExpandedSubmenu(expandedSubmenu === menuItem.title ? null : menuItem.title);
-    } else {
-      setExpandedSubmenu(null);
-    }
-  };
+  
 
   const [selectedTag, setSelectedTag] = useState("");
 
@@ -68,13 +61,19 @@ const ToolboxPage = () => {
   return (
     <div className="toolbox-container">
       {/* Left Side Menu (Teal) */}
-      <div className="left-menu">
+      <SideMenu 
+        menuItems={menuItems}
+        setSelectedMenu={setSelectedMenu}
+        activeSectionId={activeSectionId}
+        sectionRefs={sectionRefs}
+      />
+      {/* <div className="left-menu">
         <h2>Menu</h2>
         <ul>
           {menuItems.map((item) => (
             <li key={item.id}>
               <div onClick={() => handleMenuClick(item)} className="menu-item">
-              <strong>{item.id}. </strong> {item.title} {/* ✅ Show enumeration in main menu */}
+              <strong>{item.id}. </strong> {item.title} 
               </div>
               {item.subItems && expandedSubmenu === item.title && (
                 <ul className="submenu">
@@ -98,7 +97,7 @@ const ToolboxPage = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
 
       {/* Center Content */}
       <div className="center-content">

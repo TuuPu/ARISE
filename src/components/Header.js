@@ -11,7 +11,7 @@ const Header = () => {
       <nav className="global-nav">
         <Link to="/" className={location.pathname === "/" ? "active" : ""}>Home</Link>
         <Link to="/toolbox" className={location.pathname === "/toolbox" ? "active" : ""}>Toolbox</Link>
-        <a href="https://example.com" target="_blank" rel="noopener noreferrer">Project Website</a>
+        <a href="https://arise-middleware.eu" target="_blank" rel="noopener noreferrer">Project Website</a>
         <a href="mailto:contact@example.com" className="contact">Contact</a>
       </nav>
     </header>
