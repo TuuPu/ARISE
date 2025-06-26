@@ -46,12 +46,6 @@ html, body {
   padding: 40px;
   color: white;
 }
-
-/* Left Side Text */
-.text-section {
-  max-width: 50%;
-}
-
 /* Right Side Logo Box */
 .explore-section {
   background: white;

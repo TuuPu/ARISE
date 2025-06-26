@@ -11,7 +11,7 @@ const LandingPage = () => {
 
       {/* Main Content */}
       <main className="main-content">
-        <section className="text-section">
+        <section className="landing-page-text">
           <h1>ARISE SSH Framework for Human-Centric and Ethical HRI</h1>
           <h2>About the ARISE Framework</h2>
           <p>

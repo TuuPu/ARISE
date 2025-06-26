@@ -1,10 +1,7 @@
-import React from "react";
-
 const menuItems = [
   {
     id: "1",
-    title: "ARISE Ethical Principles",
-    subItems: [],
+    title: "ARISE Ethical Principles"
   },
   {
     id: "2",
