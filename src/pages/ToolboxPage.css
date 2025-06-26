@@ -6,34 +6,6 @@
   overflow: hidden;
 }
 
-/* Left Menu (Teal) */
-.left-menu {
-  width: 25%;
-  background: radial-gradient(circle at top left, #387d79, #489e9a 40%, #6ac2be);
-  color: white;
-  padding: 20px;
-  overflow-y: auto;
-}
-
-.left-menu h2 {
-  text-align: center;
-}
-
-.left-menu ul {
-  list-style: none;
-  padding: 0;
-}
-
-.left-menu li {
-  padding: 10px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.left-menu li:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-
 .center-content {
   flex-grow: 1;
   background: radial-gradient(circle at top left, #6ac2be, #489e9a 40%, #387d79);

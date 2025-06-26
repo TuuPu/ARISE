@@ -16,8 +16,8 @@ const LandingPage = () => {
           <h2>About the ARISE Framework</h2>
           <p>
             The ARISE SSH Framework is an open-access toolbox designed to promote human-centric and trustworthy Human-Robot Interaction (HRI).
-            It provides a structured approach to addressing ethical, legal, and social considerations in robotics.
-            The framework is being developed iteratively—explore the current version and help shape its future.
+            It provides a structured approach to addressing ethical, legal, and social dimensions in robotics.
+            This is an evolving framework. By exploring the current version, you contribute directily to its ongoing development. 
           </p>
         </section>
 

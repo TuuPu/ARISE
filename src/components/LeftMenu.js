@@ -1,10 +1,8 @@
 import React from "react";
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import './Footer.css';
+import { useState } from "react";   
+import './LeftMenu.css';
 
-const SideMenu = (props) => {
-    // menuItems, expandedSubmenu, handleMenuClick, activeSectionId, setSelectedMenu, sectionRefs
+const LeftMenu = (props) => {
 
     const [expandedSubmenu, setExpandedSubmenu] = useState(null);
     
@@ -53,4 +51,4 @@ const SideMenu = (props) => {
   );
 };
 
-export default SideMenu;
+export default LeftMenu;

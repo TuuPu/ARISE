@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import "./ToolboxPage.css";
 import useCases from "../data/useCases";
 import menuItems from "../data/menuItems";
-import SideMenu from "../components/SideMenu";
+import LeftMenu from "../components/LeftMenu";
 
 const ToolboxPage = () => {
   console.log("menuItems:", menuItems);
@@ -37,8 +37,6 @@ const ToolboxPage = () => {
     setExpandedCardId(expandedCardId === id ? null : id);
   };
 
-  
-
   const [selectedTag, setSelectedTag] = useState("");
 
 
@@ -61,50 +59,20 @@ const ToolboxPage = () => {
   return (
     <div className="toolbox-container">
       {/* Left Side Menu (Teal) */}
-      <SideMenu 
+      <LeftMenu 
         menuItems={menuItems}
         setSelectedMenu={setSelectedMenu}
         activeSectionId={activeSectionId}
         sectionRefs={sectionRefs}
+
       />
-      {/* <div className="left-menu">
-        <h2>Menu</h2>
-        <ul>
-          {menuItems.map((item) => (
-            <li key={item.id}>
-              <div onClick={() => handleMenuClick(item)} className="menu-item">
-              <strong>{item.id}. </strong> {item.title} 
-              </div>
-              {item.subItems && expandedSubmenu === item.title && (
-                <ul className="submenu">
-                  {item.subItems.map((subItem) => (
-                    <li
-                      key={subItem.id}
-                      className={subItem.id === activeSectionId ? "active" : ""}
-                      onClick={() => {
-                        setSelectedMenu(subItem);
-                        setTimeout(() => {
-                        const el = sectionRefs.current[subItem.id];
-                        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-                        }, 100);
-                        }}
-                      >
-                    <strong>{subItem.id}</strong> {subItem.title}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
-        </ul>
-      </div> */}
 
       {/* Center Content */}
       <div className="center-content">
-      <div className="sticky-header">
-      <h2 style={{ color: '#489e9a' }}>
-        {selectedMenu ? selectedMenu.title : "Select an option"}
-      </h2>
+        <div className="sticky-header">
+          <h2 style={{ color: '#489e9a' }}>
+            {selectedMenu ? selectedMenu.title : "Select an option"}
+          </h2>
       </div>
 
         {/* Display intro text for top-level menu items */}
@@ -123,31 +91,31 @@ const ToolboxPage = () => {
 )}
 {selectedMenu?.subItems && !selectedMenu.text && (
   <div className="card-grid">
-  {selectedMenu.subItems.map((subItem) => (
-    <div key={subItem.id} className="info-card">
-      <h3>{subItem.title}</h3>
+    {selectedMenu.subItems.map((subItem) => (
+      <div key={subItem.id} className="info-card">
+        <h3>{subItem.title}</h3>
 
-      <div className="card-body">
-  {expandedCardId === subItem.id ? (
-    subItem.text
-  ) : (
-    <p>
-      {subItem.teaser
-        ? subItem.teaser
-        : "Click to read more about this topic."}
-    </p>
-  )}
-</div>
+        <div className="card-body">
+          {expandedCardId === subItem.id ? (
+            subItem.text
+          ) : (
+            <p>
+              {subItem.teaser
+                ? subItem.teaser
+                : "Click to read more about this topic."}
+            </p>
+          )}
+        </div>
 
-      <button
-        className="card-toggle-button"
-        onClick={() => toggleCard(subItem.id)}
-      >
-        {expandedCardId === subItem.id ? "Show less" : "Read more"}
-      </button>
-    </div>
+          <button
+            className="card-toggle-button"
+            onClick={() => toggleCard(subItem.id)}
+          >
+            {expandedCardId === subItem.id ? "Show less" : "Read more"}
+          </button>
+        </div>
   ))}
-</div>
+    </div>
 )}
 
         {/* Use Case Library Section */}

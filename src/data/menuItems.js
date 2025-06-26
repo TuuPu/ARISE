@@ -112,7 +112,7 @@ const menuItems = [
       },
     ],
   },
-    { id: 4, title: "Legislation, Regulation, Standards",
+    { id: 4, title: "Legislation, Regulation, and Standards",
     subItems: [
       {
         id: "4.1",
