@@ -39,160 +39,175 @@ const ToolboxPage = () => {
 
   const [selectedTag, setSelectedTag] = useState("");
 
-
   // Toggle use case expansion
   const toggleUseCase = (useCaseId) => {
     setExpandedUseCase(expandedUseCase === useCaseId ? null : useCaseId);
   };
 
   const filteredUseCases = useCases.filter((useCase) => {
-    const matchesSearch = useCase.title.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesSearch = useCase.title
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
     const matchesTag =
-      selectedTag === "" || (useCase.tags && useCase.tags.includes(selectedTag));
+      selectedTag === "" ||
+      (useCase.tags && useCase.tags.includes(selectedTag));
     return matchesSearch && matchesTag;
   });
-
-
 
   const [activeSectionId, setActiveSectionId] = useState(null);
 
   return (
     <div className="toolbox-container">
       {/* Left Side Menu (Teal) */}
-      <LeftMenu 
+      <LeftMenu
         menuItems={menuItems}
         setSelectedMenu={setSelectedMenu}
         activeSectionId={activeSectionId}
         sectionRefs={sectionRefs}
-
       />
 
       {/* Center Content */}
       <div className="center-content">
         <div className="sticky-header">
-          <h2 style={{ color: '#489e9a' }}>
+          <h2 style={{ color: "#489e9a" }}>
             {selectedMenu ? selectedMenu.title : "Select an option"}
           </h2>
-      </div>
+        </div>
 
         {/* Display intro text for top-level menu items */}
-        {selectedMenu && selectedMenu.introText && <p>{selectedMenu.introText}</p>}
+        {selectedMenu && selectedMenu.introText && (
+          <p>{selectedMenu.introText}</p>
+        )}
 
         {/* Display sub-menu content */}
         {selectedMenu && selectedMenu.text && (
-  <div
-    id={`section-${selectedMenu.id}`}
-    ref={(el) => {
-      if (selectedMenu.id) sectionRefs.current[selectedMenu.id] = el;
-    }}
-  >
-    <p>{selectedMenu.text}</p>
-  </div>
-)}
-{selectedMenu?.subItems && !selectedMenu.text && (
-  <div className="card-grid">
-    {selectedMenu.subItems.map((subItem) => (
-      <div key={subItem.id} className="info-card">
-        <h3>{subItem.title}</h3>
-
-        <div className="card-body">
-          {expandedCardId === subItem.id ? (
-            subItem.text
-          ) : (
-            <p>
-              {subItem.teaser
-                ? subItem.teaser
-                : "Click to read more about this topic."}
-            </p>
-          )}
-        </div>
-
-          <button
-            className="card-toggle-button"
-            onClick={() => toggleCard(subItem.id)}
+          <div
+            id={`section-${selectedMenu.id}`}
+            ref={(el) => {
+              if (selectedMenu.id) sectionRefs.current[selectedMenu.id] = el;
+            }}
           >
-            {expandedCardId === subItem.id ? "Show less" : "Read more"}
-          </button>
-        </div>
-  ))}
-    </div>
-)}
+            <p>{selectedMenu.text}</p>
+          </div>
+        )}
+        {selectedMenu?.subItems && !selectedMenu.text && (
+          <div className="card-grid">
+            {selectedMenu.subItems.map((subItem) => (
+              <div key={subItem.id} className="info-card">
+                <h3>{subItem.title}</h3>
+
+                <div className="card-body">
+                  {expandedCardId === subItem.id ? (
+                    subItem.text
+                  ) : (
+                    <p>
+                      {subItem.teaser
+                        ? subItem.teaser
+                        : "Click to read more about this topic."}
+                    </p>
+                  )}
+                </div>
+
+                <button
+                  className="card-toggle-button"
+                  onClick={() => toggleCard(subItem.id)}
+                >
+                  {expandedCardId === subItem.id ? "Show less" : "Read more"}
+                </button>
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* Use Case Library Section */}
         {selectedMenu && selectedMenu.title === "Use Case Library" && (
-  <div className="use-case-section">
-    <select
-  value={selectedTag}
-  onChange={(e) => setSelectedTag(e.target.value)}
-  className="search-bar"
->
-  <option value="">Filter by Ethical Principle</option>
-  <option value="Respect for Human Agency">Respect for Human Agency</option>
-  <option value="Privacy and Data Governance">Privacy and Data Governance</option>
-  <option value="Fairness">Fairness</option>
-  <option value="Individual, Social and Environmental Well-being">
-    Individual, Social and Environmental Well-being
-  </option>
-  <option value="Transparency">Transparency</option>
-  <option value="Accountability and Oversight">Accountability and Oversight</option>
-  <option value="Worker Dignity and Equity">Worker Dignity and Equity</option>
-  <option value="Human Resilience Through Continuous Learning and Support">
-    Human Resilience Through Continuous Learning and Support
-  </option>
-</select>
-    <input
-      type="text"
-      placeholder="Search use cases..."
-      value={searchTerm}
-      onChange={(e) => setSearchTerm(e.target.value)}
-      className="search-bar"
-    />
+          <div className="use-case-section">
+            <select
+              value={selectedTag}
+              onChange={(e) => setSelectedTag(e.target.value)}
+              className="search-bar"
+            >
+              <option value="">Filter by Ethical Principle</option>
+              <option value="Respect for Human Agency">
+                Respect for Human Agency
+              </option>
+              <option value="Privacy and Data Governance">
+                Privacy and Data Governance
+              </option>
+              <option value="Fairness">Fairness</option>
+              <option value="Individual, Social and Environmental Well-being">
+                Individual, Social and Environmental Well-being
+              </option>
+              <option value="Transparency">Transparency</option>
+              <option value="Accountability and Oversight">
+                Accountability and Oversight
+              </option>
+              <option value="Worker Dignity and Equity">
+                Worker Dignity and Equity
+              </option>
+              <option value="Human Resilience Through Continuous Learning and Support">
+                Human Resilience Through Continuous Learning and Support
+              </option>
+            </select>
+            <input
+              type="text"
+              placeholder="Search use cases..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="search-bar"
+            />
 
-    {/* Expand / Collapse Button */}
-    <button
-      onClick={() =>
-        setExpandedUseCase(expandedUseCase === 'all' ? null : 'all')
-      }
-      style={{
-        marginBottom: '10px',
-        padding: '10px 15px',
-        fontSize: '14px',
-        backgroundColor: '#489e9a',
-        color: 'white',
-        border: 'none',
-        borderRadius: '6px',
-        cursor: 'pointer',
-      }}
-    >
-      {expandedUseCase === 'all' ? 'Collapse All' : 'Expand All'}
-    </button>
+            {/* Expand / Collapse Button */}
+            <button
+              onClick={() =>
+                setExpandedUseCase(expandedUseCase === "all" ? null : "all")
+              }
+              style={{
+                marginBottom: "10px",
+                padding: "10px 15px",
+                fontSize: "14px",
+                backgroundColor: "#489e9a",
+                color: "white",
+                border: "none",
+                borderRadius: "6px",
+                cursor: "pointer",
+              }}
+            >
+              {expandedUseCase === "all" ? "Collapse All" : "Expand All"}
+            </button>
 
-    <div className="use-case-list">
-      {filteredUseCases.length > 0 ? (
-        filteredUseCases.map((useCase) => (
-          <div
-            key={useCase.id}
-            className={`use-case-item ${
-              expandedUseCase === 'all' || expandedUseCase === useCase.id ? "expanded" : ""
-            }`}
-            onClick={() =>
-              setExpandedUseCase(
-                expandedUseCase === useCase.id ? null : useCase.id
-              )
-            }
-          >
-            <h3 className="use-case-title">{useCase.title}</h3>
-            {(expandedUseCase === useCase.id || expandedUseCase === 'all') && (
-              <div className="use-case-content">{useCase.description}</div>
-            )}
+            <div className="use-case-list">
+              {filteredUseCases.length > 0 ? (
+                filteredUseCases.map((useCase) => (
+                  <div
+                    key={useCase.id}
+                    className={`use-case-item ${
+                      expandedUseCase === "all" ||
+                      expandedUseCase === useCase.id
+                        ? "expanded"
+                        : ""
+                    }`}
+                    onClick={() =>
+                      setExpandedUseCase(
+                        expandedUseCase === useCase.id ? null : useCase.id
+                      )
+                    }
+                  >
+                    <h3 className="use-case-title">{useCase.title}</h3>
+                    {(expandedUseCase === useCase.id ||
+                      expandedUseCase === "all") && (
+                      <div className="use-case-content">
+                        {useCase.description}
+                      </div>
+                    )}
+                  </div>
+                ))
+              ) : (
+                <p>No matching use cases found.</p>
+              )}
+            </div>
           </div>
-        ))
-      ) : (
-        <p>No matching use cases found.</p>
-      )}
-    </div>
-  </div>
-)}
+        )}
       </div>
     </div>
   );
