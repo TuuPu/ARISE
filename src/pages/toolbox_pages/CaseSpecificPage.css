@@ -1,0 +1,124 @@
+.use-case-list {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Individual Use Case */
+.use-case-item {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Remove hover effect from expanded box */
+.use-case-item.expanded:hover {
+  background: white !important;
+}
+
+/* Use Case Title */
+.use-case-title {
+  font-size: 18px;
+  color: #489e9a;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Expanded use-case item should always have a white background */
+.use-case-item.expanded {
+  background: white !important;
+  padding: 20px;
+  border: 1px solid #489e9a;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 95%;  /* Leaves minimal space on the sides */
+  width: 95%;
+  text-align: justify;
+  overflow: hidden; /* Ensures title stays visible */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollable content inside the expanded use case */
+.use-case-content {
+  color: black;
+  font-size: 12px; /* Smaller text for readability */
+  line-height: 1.6;
+  max-width: 100%;
+  word-wrap: break-word;
+  padding: 15px;
+  overflow-y: auto; /* Allows scrolling within the box */
+  max-height: 50vh; /* Keeps title visible while making content scrollable */
+}
+
+/* Line breaks between paragraphs */
+.use-case-content p {
+  margin-bottom: 10px;
+}
+
+.use-case-table th,
+.use-case-table td {
+  border: 1px solid #489e9a;
+  padding: 8px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.use-case-table th {
+  background: #489e9a;
+  color: white;
+}
+
+/* Ethical Concerns List */
+.use-case-content ul {
+  padding-left: 15px;
+}
+
+.use-case-content ul li {
+  margin-bottom: 10px;
+  font-size: 14px; 
+  line-height: 1.5;
+}
+
+/* Expanded Use Case Item */
+.use-case-item.expanded {
+  background: white !important;
+  padding: 20px;
+  border: 1px solid #489e9a;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 95%; /* ✅ Expands to nearly full width */
+  width: 95%;
+  text-align: justify;
+  overflow: hidden; /* Ensures title stays visible */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Expanded Content Scrollable */
+.use-case-content {
+  color: black;
+  font-size: 1rem;
+  line-height: 1.6;
+  word-wrap: break-word;
+  padding: 1rem;
+}
+
+.use-case-text {
+  line-height: 1.5;
+  width: 100%; /* ✅ Full width */
+  max-width: 100%; /* ✅ Prevents shrinking */
+  text-align: left; /* ✅ Aligns to left */
+  word-wrap: break-word; /* ✅ Prevents words from breaking layout */
+  margin-bottom: 10px; /* ✅ Adds spacing between paragraphs */
+}
+
+
+/* Table Styling */
+.use-case-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}

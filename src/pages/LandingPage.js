@@ -11,13 +11,13 @@ const LandingPage = () => {
 
       {/* Main Content */}
       <main className="main-content">
-        <section className="text-section">
+        <section className="landing-page-text">
           <h1>ARISE SSH Framework for Human-Centric and Ethical HRI</h1>
           <h2>About the ARISE Framework</h2>
           <p>
             The ARISE SSH Framework is an open-access toolbox designed to promote human-centric and trustworthy Human-Robot Interaction (HRI).
-            It provides a structured approach to addressing ethical, legal, and social considerations in robotics.
-            The framework is being developed iteratively—explore the current version and help shape its future.
+            It provides a structured approach to addressing ethical, legal, and social dimensions in robotics.
+            This is an evolving framework. By exploring the current version, you contribute directily to its ongoing development. 
           </p>
         </section>
 
@@ -26,12 +26,6 @@ const LandingPage = () => {
           <div className="explore-logo">LOGO</div>
         </section>
       </main>
-
-      {/* Footer Section */}
-      <footer className="footer">
-        <a href="https://demoshelsinki.fi" target="_blank" rel="noopener noreferrer">Demos Helsinki</a>
-        <p>ARISE project funded by EC (2024-2027)</p>
-      </footer>
     </div>
   );
 };
