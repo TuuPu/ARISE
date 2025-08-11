@@ -1,4 +1,4 @@
-const menuItems = [
+const tb_menuItems = [
   {
     id: "1",
     title: "ARISE Ethical Principles"
@@ -73,4 +73,4 @@ const menuItems = [
     ]
   },
 ];
-export default menuItems;
+export default tb_menuItems;

@@ -17,7 +17,7 @@ const LeftMenu = (props) => {
 
     return (
         <div className="left-menu">
-            <h2>Menu</h2>
+            <h2>{props.menuName}</h2>
             <ul>
             {props.menuItems.map((item) => (
                 <li key={item.id}>

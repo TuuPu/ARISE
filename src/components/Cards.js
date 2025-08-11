@@ -10,8 +10,8 @@ const Cards = (props) => {
               <h3>{subItem.title}</h3>
 
               <div className="card-body">{subItem.text}</div>
-              {/* 
-               { props.expandButton && <button
+              
+               {/* { props.expandButton && <button
                 className="card-toggle-button"
                 onClick={() => console.log("Clicked")}
               ></button>} */}

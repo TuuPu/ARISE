@@ -61,12 +61,20 @@ html, body {
 
 p{
   font-family: 'figtree'; 
-  padding: 1rem 0; 
   font-size: 1.2rem;
 }
 
 h1 {
   font-family: 'Exo 2';
+}
+h2 {
+  font-family: 'Exo 2';
+}
+
+h3 {
+  font-family: 'Exo 2';
+  padding: 1rem 0;
+  font-size: 1.4rem;
 }
 
 .primary-button {
@@ -76,6 +84,7 @@ h1 {
   font-family: 'Exo 2';
   font-weight: 600;
   stroke-width: 0px;
+  margin: 1.3rem 0; 
   border: none;
   color: var(--white);
   background-color: var(--secondary);
@@ -87,4 +96,28 @@ h1 {
   transform: scale(1.05);
   cursor: pointer; 
 
+}
+
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 1rem;
+  width: 90%;
+  z-index: 10;
+
+  background: linear-gradient(to right, var(--primary), rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(15px);
+  color: #f0f0f0;
+  border-radius: 0 0 16px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.sticky-header h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: white !important;
 }

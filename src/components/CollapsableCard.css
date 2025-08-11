@@ -1,0 +1,26 @@
+.collapsible-card {
+    margin: 1rem;
+    border-radius: 8px;
+    stroke-width: 1px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 0px 15px;
+    overflow: hidden;
+    color:black;
+    background-color: var(--white);
+}
+.cc-header {
+    padding: 1rem;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    color: var(--purple);
+}
+.cc-content {
+    background-color: white;
+    transition: height 0.4s ease;
+    padding: 0px 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    color: var(--text-black);
+}
