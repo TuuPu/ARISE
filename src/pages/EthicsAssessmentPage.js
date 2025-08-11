@@ -35,13 +35,14 @@ const EthicsAssessmentPage = () => {
           descriptions of each stage.
         </p>
 
+{/* 
         <section
           className="explore-section"
           onClick={() => navigate("/toolbox")}
         >
           <h2>Explore the Tool</h2>
           <div className="explore-logo">LOGO</div>
-        </section>
+        </section> */}
       </div>
     </div>
   );
