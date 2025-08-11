@@ -7,7 +7,9 @@ const Header = () => {
 
   return (
     <header className="global-header">
-      <div className="logo">ARISE LOGO</div>
+
+      <img className="logo" src="ARISE_logo.png" alt="Arise Logo"></img>
+  
       <nav className="global-nav">
         <Link to="/" className={location.pathname === "/" ? "active" : ""}>Home</Link>
         <Link to="/toolbox" className={location.pathname === "/toolbox" ? "active" : ""}>SSH Toolbox</Link>
