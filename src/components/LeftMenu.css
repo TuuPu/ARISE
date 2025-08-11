@@ -8,7 +8,8 @@
 }
 
 .left-menu h2 {
-  text-align: center;
+  text-align: left;
+  padding: 1rem 0;
 }
 
 .left-menu ul {
