@@ -69,15 +69,6 @@ h1 {
   font-family: 'Exo 2';
 }
 
-/* Footer */
-.footer {
-  background: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 20px;
-  border-top: 2px solid #ccc;
-}
-
 .primary-button {
   padding: 1rem; 
   border-radius: 0.3rem;

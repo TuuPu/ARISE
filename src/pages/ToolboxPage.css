@@ -8,7 +8,7 @@
 
 .center-content {
   flex-grow: 1;
-  background: radial-gradient(circle at top left, #6ac2be, #489e9a 40%, #387d79);
+  background: radial-gradient(circle at top left, #50ada8, #489e9a 40%, #387d79);
   color: white;
   display: flex;
   flex-direction: column;
@@ -87,13 +87,13 @@
   padding: 12px;
   margin: 15px 0;
   font-size: 16px;
-  border: 2px solid #489e9a;
+  border: 2px solid var(--primary);
   border-radius: 8px;
   outline: none;
 }
 
 .search-bar:focus {
-  border-color: purple;
+  border-color: var(--purple);
 }
 
 /* Submenu Styling */
@@ -126,7 +126,7 @@
 
 .submenu li.active {
   transition: background-color 0.3s ease, color 0.3s ease;
-  background-color: #ffa500;
+  background-color: var(--secondary);
   color: white;
   border-left: 5px solid #fff;
   border-radius: 4px;
@@ -141,7 +141,7 @@
   width: 100%;
   z-index: 10;
 
-  background: linear-gradient(to right, rgba(72, 158, 154, 0.8), rgba(255, 255, 255, 0.05));
+  background: linear-gradient(to right, var(--primary), rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(15px);
   color: #f0f0f0;
   border-radius: 0 0 16px 16px;
@@ -179,7 +179,7 @@
 
 .info-card h3 {
   margin-top: 0;
-  color: #aa66cc;
+  color: var(--purple);
 }
 
 .info-card p {
@@ -209,7 +209,7 @@
 .card-toggle-button {
   margin-top: 10px;
   padding: 8px 12px;
-  background-color: #aa66cc;
+  background-color: var(--purple);
   color: white;
   border: none;
   border-radius: 5px;
@@ -219,5 +219,5 @@
 }
 
 .card-toggle-button:hover {
-  background-color: #9339b5;
+  background-color: var(--purple);
 }
