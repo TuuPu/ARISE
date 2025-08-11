@@ -1,6 +1,6 @@
 import React from "react";
 import Cards from "../../components/Cards";
-import cases_cards from "../../data/cards/cases_cards";
+import cases_cards from "../../data/tb_cards/cases_cards";
 // import './Header.css';
 
 const CaseMainPage = (props) => {

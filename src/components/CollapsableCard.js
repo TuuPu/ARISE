@@ -16,13 +16,12 @@ const CollapsableCard = (props) => {
         }
       >
         <h2>{props.title}</h2>
-        <button>view more</button>
+        <p className="expand-text">{expanded ? "Click to view less" : "Click to view more"}</p>
       </div>
       <div
-        className="cc-content"
+        className= "cc-content"
         style={{
-          height: expanded ? "100%" : "0px",
-        }}
+          height: expanded ? "100%" : "0"}}
       >
         {props.text}
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Cards from "../../components/Cards";
-import principles_cards from "../../data/cards/principles_cards";
+import principles_cards from "../../data/tb_cards/principles_cards";
 // import './Header.css';
 
 const PrinciplesMainPage = (props) => {
