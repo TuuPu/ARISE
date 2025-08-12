@@ -14,7 +14,6 @@ import LegislationPage from "./toolbox_subpages/LegislationPage";
 import tb_menuItems from "../data/tb_menuItems";
 import cases from "../data/cases";
 
-
 const ToolboxPage = () => {
   const [selectedMenu, setSelectedMenu] = useState(tb_menuItems[0]);
   const sectionRefs = useRef({});
@@ -22,14 +21,19 @@ const ToolboxPage = () => {
   const [activeSectionId, setActiveSectionId] = useState(null);
   const [expandedSubmenu, setExpandedSubmenu] = useState(null);
 
-  const handleMenuClick = (menuItem) => {
-    setSelectedMenu(menuItem);
-    if (menuItem.subItems) {
-      setExpandedSubmenu(
-        expandedSubmenu === menuItem.title ? null : menuItem.title
-      );
-    } else {
-      setExpandedSubmenu(null);
+  const handleMenuClick = (itemID) => {
+    let parentMenuItem = tb_menuItems.find(({ id }) => id === itemID);
+    let actualMenuItem = parentMenuItem;
+    if (itemID.indexOf(".") !== -1) {
+      //If the item id contains period, it is for a sub page
+      const parentID = itemID[0];
+      parentMenuItem = tb_menuItems.find(({ id }) => id === parentID);
+      actualMenuItem = parentMenuItem.subItems.find(({ id }) => id === itemID);
+    }
+
+    setSelectedMenu(actualMenuItem);
+    if (parentMenuItem.subItems) {
+      setExpandedSubmenu(parentMenuItem.title);
     }
   };
 
@@ -56,10 +60,12 @@ const ToolboxPage = () => {
           {selectedMenu.id === "2" && (
             <PrinciplesMainPage
               handleMenuClick={handleMenuClick}
-              caseMenuItem={tb_menuItems[3]}
+              caseMenuItemID={"5"}
             />
           )}
-          {selectedMenu.id === "3" && <LGSMainPage handleSubpageClick={handleMenuClick}/>} 
+          {selectedMenu.id === "3" && (
+            <LGSMainPage handleSubpageClick={handleMenuClick} />
+          )}
           {/* Need to pass in indeces for subpages */}
 
           {selectedMenu.id === "3.1" && <LegislationPage />}
@@ -68,7 +74,9 @@ const ToolboxPage = () => {
 
           {selectedMenu.id === "4" && <CDMainPage />}
 
-          {selectedMenu.id === "5" && <CaseMainPage />}
+          {selectedMenu.id === "5" && (
+            <CaseMainPage handleSubpageClick={handleMenuClick} />
+          )}
 
           {selectedMenu.id === "5.1" && <CaseSpecificPage c={cases[0]} />}
           {selectedMenu.id === "5.2" && <CaseSpecificPage c={cases[1]} />}

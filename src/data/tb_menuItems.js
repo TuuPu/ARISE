@@ -28,16 +28,6 @@ const tb_menuItems = [
   {
     id: "4",
     title: "Collaborative Design Tools",
-    subItems: [
-      {
-        id: "4.1",
-        title: "General Design Principles",
-      },
-      {
-        id: "4.2",
-        title: "Design Toolkits",
-      },
-    ],
   },
   { id: "5", 
     title: "Case Specific Ethical Concerns", 

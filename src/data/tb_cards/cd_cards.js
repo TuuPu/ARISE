@@ -1,6 +1,6 @@
 const cd_cards = [
   {
-    id: "3.1",
+    id: "4.1",
     title: "General Design Principles",
     text: (
       <p>
@@ -9,7 +9,7 @@ const cd_cards = [
     ),
   },
   {
-    id: "3.2",
+    id: "4.2",
     title: "Design Toolkits",
     text: (
       <p>

@@ -11,7 +11,7 @@ const LeftMenu = (props) => {
       <ul>
         {props.menuItems.map((item) => (
           <li key={item.id}>
-            <div onClick={() => props.handleMenuClick(item)} className="menu-item">
+            <div onClick={() => props.handleMenuClick(item.id)} className="menu-item">
               <strong>{item.id}. </strong> {item.title}{" "}
               {/* Show enumeration in main menu */}
             </div>

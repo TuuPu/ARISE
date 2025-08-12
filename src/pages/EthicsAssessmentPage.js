@@ -15,17 +15,21 @@ const EthicsAssessmentPage = () => {
   const [activeSectionId, setActiveSectionId] = useState(null);
   const [expandedSubmenu, setExpandedSubmenu] = useState(null);
 
-  const handleMenuClick = (menuItem) => {
-    setSelectedMenu(menuItem);
-    if (menuItem.subItems) {
-      setExpandedSubmenu(
-        expandedSubmenu === menuItem.title ? null : menuItem.title
-      );
-    } else {
-      setExpandedSubmenu(null);
+  const handleMenuClick = (itemID) => {
+    let parentMenuItem = eia_menuItems.find(({ id }) => id === itemID);
+    let actualMenuItem = parentMenuItem;
+    if (itemID.indexOf(".") !== -1) {
+      //If the item id contains period, it is for a sub page
+      const parentID = itemID[0];
+      parentMenuItem = eia_menuItems.find(({ id }) => id === parentID);
+      actualMenuItem = parentMenuItem.subItems.find(({ id }) => id === itemID);
+    }
+
+    setSelectedMenu(actualMenuItem);
+    if (parentMenuItem.subItems) {
+      setExpandedSubmenu(parentMenuItem.title);
     }
   };
-
 
 
   return (

@@ -12,7 +12,7 @@ const CaseMainPage = (props) => {
         challenge
       </p>
 
-      <Cards items={cases_cards} expandButton={false} subpageButton={true} />
+      <Cards items={cases_cards} expandButton={false} subpageButton={true} handleSubpageClick={props.handleSubpageClick} />
     </div>
   );
 };

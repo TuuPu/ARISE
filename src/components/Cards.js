@@ -19,7 +19,7 @@ const Cards = (props) => {
               {props.subpageButton && (
                 <button
                   className="card-toggle-button"
-                  onClick={() => console.log("this should redirect your to the subpage")}
+                  onClick={() => props.handleSubpageClick(subItem.id)}
                 >Learn More</button>
               )}
             </div>

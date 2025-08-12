@@ -1,6 +1,6 @@
 const principles_cards = [
   {
-    id: "1.1",
+    id: "2.1",
     title: "1. Respect for Human Agency",
     text: (
       <p>
@@ -12,7 +12,7 @@ const principles_cards = [
     ),
   },
   {
-    id: "1.2",
+    id: "2.2",
     title: "2. Privacy and Data Governance",
     text: (
       <p>
@@ -22,7 +22,7 @@ const principles_cards = [
     ),
   },
   {
-    id: "1.3",
+    id: "2.3",
     title: "3. Fairness",
     text: (
       <p>
@@ -32,7 +32,7 @@ const principles_cards = [
     ),
   },
   {
-    id: "1.4",
+    id: "2.4",
     title: "4. Individual, Social and Environmental Well-being",
     text: (
       <p>
@@ -42,7 +42,7 @@ const principles_cards = [
     ),
   },
   {
-    id: "1.5",
+    id: "2.5",
     title: "5. Transparency",
     text: (
       <p>
@@ -52,7 +52,7 @@ const principles_cards = [
     ),
   },
   {
-    id: "1.6",
+    id: "2.6",
     title: "6. Accountability and Oversight",
     text: (
       <p>
@@ -64,7 +64,7 @@ const principles_cards = [
     ),
   },
   {
-    id: "1.7",
+    id: "2.7",
     title: "7. Worker Dignity and Equity",
     text: (
       <p>
@@ -76,7 +76,7 @@ const principles_cards = [
     ),
   },
   {
-    id: "1.8",
+    id: "2.8",
     title: "8. Human Resilience Through Continuous Learning and Support",
     text: (
       <p>

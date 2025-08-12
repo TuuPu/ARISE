@@ -71,7 +71,7 @@ const PrinciplesMainPage = (props) => {
         specific robotics development contexts, explore the library of
         case-specific ethical concerns
       </p>
-      <button onClick={() => props.handleMenuClick(props.caseMenuItem)} className="primary-button">Case-Specific Ethical Concerns</button>
+      <button onClick={() => props.handleMenuClick(props.caseMenuItemID)} className="primary-button">Case-Specific Ethical Concerns</button>
     </div>
   );
 };
