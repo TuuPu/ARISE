@@ -34,35 +34,35 @@ const tb_menuItems = [
     subItems: [
       {
         id: "5.1", 
-        title: "Challenge 1"
+        title: "Battery Disassembly"
       }, 
       {
         id: "5.2", 
-        title: "Challenge 2"
+        title: "Fruit Picking"
       },
       {
         id: "5.3", 
-        title: "Challenge 3"
+        title: "Assembly and Packing Assistant"
       },
       {
         id: "5.4", 
-        title: "Challenge 4"
+        title: "Kitting Assistant"
       },
       {
         id: "5.5", 
-        title: "Challenge 5"
+        title: "Interactive Learning"
       },
       {
         id: "5.6", 
-        title: "Challenge 6"
+        title: "Carrying Medical Samples"
       },
       {
         id: "5.7", 
-        title: "Challenge 7"
+        title: "PCB Desoldering"
       },
       {
         id: "5.8", 
-        title: "Challenge 8"
+        title: "Workpiece Holder"
       }
     ]
   },

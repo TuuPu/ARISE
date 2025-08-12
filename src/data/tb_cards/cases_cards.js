@@ -4,7 +4,7 @@ const cases_cards = [
     title: "Challenge 1",
     text: (
       <p>
-        Dismantling and assembly of high-value products (Battery Disassembly) 
+        Dismantling and assembly of high-value products (battery disassembly) 
       </p>
     ),
   },
@@ -13,7 +13,7 @@ const cases_cards = [
     title: "Challenge 2",
     text: (
       <p>
-        Complex product picking in industrial warehouses (Fruit Picking) 
+        Complex product picking in industrial warehouses (fruit picking) 
       </p>
     ),
   },
@@ -31,7 +31,7 @@ const cases_cards = [
     title: "Challenge 4",
     text: (
       <p>
-        Smart programming (Robotics kitting assistant)
+        Smart programming (robotics kitting assistant)
       </p>
     ),
   }, 
@@ -40,7 +40,7 @@ const cases_cards = [
     title: "Challenge 5",
     text: (
       <p>
-        Enhancing robot functionality through multimodal HRI interactions (Interactive learning session)
+        Enhancing robot functionality through multimodal HRI interactions (interactive learning session)
       </p>
     ),
   }, 
@@ -49,7 +49,7 @@ const cases_cards = [
     title: "Challenge 6",
     text: (
       <p>
-        Robotic systems able to autonomously perform fetch and carry tasks in healthcare environments (Asking for help while carrying medical samples)
+        Robotic systems able to autonomously perform fetch and carry tasks in healthcare environments (asking for help while carrying medical samples)
       </p>
     ),
   }, 
@@ -58,7 +58,7 @@ const cases_cards = [
     title: "Challenge 7",
     text: (
       <p>
-        Leveraging HRI to improve the efficiency of workers in high precision flexible tasks (PCB Desoldering)
+        Leveraging HRI to improve the efficiency of workers in high precision flexible tasks (PCB desoldering)
       </p>
     ),
   }, 
@@ -67,7 +67,7 @@ const cases_cards = [
     title: "Challenge 8",
     text: (
       <p>
-        Leveraging HRI for improving ergonomics in high precision tasks (Workpiece holder)
+        Leveraging HRI for improving ergonomics in high precision tasks (workpiece holder)
       </p>
     ),
   }

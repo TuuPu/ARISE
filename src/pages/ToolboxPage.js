@@ -34,6 +34,9 @@ const ToolboxPage = () => {
     setSelectedMenu(actualMenuItem);
     if (parentMenuItem.subItems) {
       setExpandedSubmenu(parentMenuItem.title);
+    } else {
+      setExpandedSubmenu(null);
+
     }
   };
 
