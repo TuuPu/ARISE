@@ -1,0 +1,26 @@
+.flag {
+    max-height: 5rem;
+    margin-right: 1rem;
+}
+
+
+.demoslogo{
+    max-height: 3rem;
+    margin: 1rem 0; 
+
+}
+
+.attribution{
+    display: flex;
+    align-items: center;
+}
+
+/* Footer */
+.footer {
+  background: var(--purple);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+  align-items: center;
+}

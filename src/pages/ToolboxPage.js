@@ -7,12 +7,12 @@ import PrinciplesMainPage from "./toolbox_pages/PrinciplesMainPage";
 import CaseSpecificPage from "./toolbox_pages/CaseSpecificPage";
 import LeftMenu from "../components/LeftMenu";
 
-import menuItems from "../data/menuItems";
+import tb_menuItems from "../data/tb_menuItems";
 import cases from "../data/cases";
 
 
 const ToolboxPage = () => {
-  const [selectedMenu, setSelectedMenu] = useState(menuItems[0]);
+  const [selectedMenu, setSelectedMenu] = useState(tb_menuItems[0]);
   const sectionRefs = useRef({});
 
   const [activeSectionId, setActiveSectionId] = useState(null);
@@ -21,7 +21,8 @@ const ToolboxPage = () => {
     <div className="toolbox-container">
       {/* Left Side Menu */}
       <LeftMenu
-        menuItems={menuItems}
+        menuName="SSH Toolbox Sections"
+        menuItems={tb_menuItems}
         setSelectedMenu={setSelectedMenu}
         activeSectionId={activeSectionId}
         sectionRefs={sectionRefs}
@@ -34,7 +35,7 @@ const ToolboxPage = () => {
             {selectedMenu.title}
           </h2>
         </div>
-        <div className="">
+        <div className="center-content-inner">
           {selectedMenu.id === "1" && <PrinciplesMainPage />}
           {selectedMenu.id === "2" && <LGSMainPage />}
           {/* {selectedMenu.id === "2.1" && <LegislationPage />}

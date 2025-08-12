@@ -1,6 +1,6 @@
 import React from "react";
 import Cards from "../../components/Cards";
-import legislation_cards from "../../data/cards/legislation_cards";
+import legislation_cards from "../../data/tb_cards/legislation_cards";
 // import './Header.css';
 
 const LGSMainPage = (props) => {

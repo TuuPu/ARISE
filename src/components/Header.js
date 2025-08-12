@@ -7,11 +7,13 @@ const Header = () => {
 
   return (
     <header className="global-header">
-      <div className="logo">ARISE LOGO</div>
+
+      <img className="logo" src="ARISE_logo.png" alt="Arise Logo"></img>
+  
       <nav className="global-nav">
         <Link to="/" className={location.pathname === "/" ? "active" : ""}>Home</Link>
         <Link to="/toolbox" className={location.pathname === "/toolbox" ? "active" : ""}>SSH Toolbox</Link>
-        <Link to="/ethics_assessment" className={location.pathname === "/ethicsassessment" ? "active" : ""}>Ethics Assessment</Link>
+        <Link to="/ethics_assessment" className={location.pathname === "/ethics_assessment" ? "active" : ""}>Ethical Impact Assessment</Link>
         <a href="https://arise-middleware.eu" target="_blank" rel="noopener noreferrer">Project Website</a>
         <a href="mailto:contact@example.com" className="contact">Contact</a>
       </nav>

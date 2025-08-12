@@ -1,12 +1,17 @@
 /* src/pages/LandingPage.css */
 
+.page-container-landing {
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+}
+
 .landing-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px;
     background: rgba(72, 158, 154, 0.2); /* Light teal background */
-    min-height: 100vh;
     width: 100%;
   }
 
@@ -14,11 +19,6 @@
     max-width: 70%;
   }
   
-  .landing-page-text p{
-    padding: 1rem 0; 
-    font-size: 1.2rem;
-    
-  }
   /* Header Section */
   .header {
     width: 100%;
@@ -64,26 +64,5 @@
     padding: 1rem 0; 
   }
   
-  /* Explore Tool Section */
-  .explore-tool {
-    margin-top: 30px;
-    text-align: center;
-  }
-  
-  .explore-logo {
-    width: 100px;
-    height: 100px;
-    background: #489e9a;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  
-  .explore-logo:hover {
-    background: purple;
-  }
+ 
   
