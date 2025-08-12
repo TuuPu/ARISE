@@ -7,6 +7,9 @@ import PrinciplesMainPage from "./toolbox_subpages/PrinciplesMainPage";
 import CaseSpecificPage from "./toolbox_subpages/CaseSpecificPage";
 import TBIntroduction from "./toolbox_subpages/TBIntroduction";
 import LeftMenu from "../components/LeftMenu";
+import StandardsPage from "./toolbox_subpages/StandardsPage";
+import GuidelinesPage from "./toolbox_subpages/GuidelinesPage";
+import LegislationPage from "./toolbox_subpages/LegislationPage";
 
 import tb_menuItems from "../data/tb_menuItems";
 import cases from "../data/cases";
@@ -56,13 +59,15 @@ const ToolboxPage = () => {
               caseMenuItem={tb_menuItems[3]}
             />
           )}
-          {selectedMenu.id === "3" && <LGSMainPage />}
-          {/* {selectedMenu.id === "2.1" && <LegislationPage />}
-          {selectedMenu.id === "2.2" && <GuidelinesPage />}
-          {selectedMenu.id === "2.3" && <StandardsPage />} */}
+          {selectedMenu.id === "3" && <LGSMainPage handleSubpageClick={handleMenuClick}/>} 
+          {/* Need to pass in indeces for subpages */}
+
+          {selectedMenu.id === "3.1" && <LegislationPage />}
+          {selectedMenu.id === "3.2" && <GuidelinesPage />}
+          {selectedMenu.id === "3.3" && <StandardsPage />}
+
           {selectedMenu.id === "4" && <CDMainPage />}
-          {/* {selectedMenu.id === "3.1" && <DesignPrinciplesPage />}
-          {selectedMenu.id === "3.2" && <DesignToolkisPage />} */}
+          
           {selectedMenu.id === "5" && <CaseMainPage />}
 
           {selectedMenu.id === "5.1" && <CaseSpecificPage c={cases[0]} />}

@@ -12,6 +12,7 @@ const LGSMainPage = (props) => {
         items = {legislation_cards}
         expandButton = {false}
         subpageButton = {true}
+        handleSubpageClick={props.handleSubpageClick}
       />
 
    </div>
