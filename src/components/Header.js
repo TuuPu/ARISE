@@ -1,14 +1,15 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate} from "react-router-dom";
 import './Header.css';
 
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate()
 
   return (
     <header className="global-header">
 
-      <img className="logo" src="ARISE_logo.png" alt="Arise Logo"></img>
+      <img onClick={() => navigate("/")} className="logo" src="ARISE_logo.png" alt="Arise Logo"></img>
   
       <nav className="global-nav">
         <Link to="/" className={location.pathname === "/" ? "active" : ""}>Home</Link>

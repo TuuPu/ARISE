@@ -23,7 +23,7 @@ const Footer = () => {
             src="demos_logo.png"
           ></img>
         </a>
-        <p>Built by Demos Helsinki</p>
+        <p>Built by <a href="https://demoshelsinki.fi">Demos Helsinki</a></p>
       </div>
     </footer>
   );
