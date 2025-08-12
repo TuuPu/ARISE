@@ -13,7 +13,7 @@ const LeftMenu = (props) => {
           <li key={item.id}>
             <div onClick={() => props.handleMenuClick(item)} className="menu-item">
               <strong>{item.id}. </strong> {item.title}{" "}
-              {/* ✅ Show enumeration in main menu */}
+              {/* Show enumeration in main menu */}
             </div>
             {item.subItems && props.expandedSubmenu === item.title && (
               <ul className="submenu">

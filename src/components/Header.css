@@ -23,6 +23,6 @@
   
   .global-nav a:hover,
   .global-nav a.active {
-    color: #489e9a;
+    color: var(--primary-dark);
   }
   

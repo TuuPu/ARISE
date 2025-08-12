@@ -1,7 +1,7 @@
 /* Left Menu (Teal) */
 .left-menu {
   width: 25%;
-  background: radial-gradient(circle at top left, #387d79, #489e9a 40%, #6ac2be);
+  background: radial-gradient(circle at top left, var(--primary-dark), var(--primary));
   color: white;
   padding: 20px;
   overflow-y: auto;
@@ -23,6 +23,6 @@
   transition: background 0.3s;
 }
 
-.left-menu li:hover {
-  background: rgba(255, 255, 255, 0.2);
+.left-menu li:hover  {
+  background: rgba(44, 21, 21, 0.15);
 }

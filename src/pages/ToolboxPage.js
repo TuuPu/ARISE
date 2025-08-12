@@ -49,7 +49,7 @@ const ToolboxPage = () => {
       {/* Center Content */}
       <div className="center-content">
         <div className="sticky-header">
-          <h2 style={{ color: "#489e9a" }}>{selectedMenu.title}</h2>
+          <h2>{selectedMenu.title}</h2>
         </div>
         <div className="center-content-inner">
           {selectedMenu.id === "1" && <TBIntroduction />}
@@ -67,7 +67,7 @@ const ToolboxPage = () => {
           {selectedMenu.id === "3.3" && <StandardsPage />}
 
           {selectedMenu.id === "4" && <CDMainPage />}
-          
+
           {selectedMenu.id === "5" && <CaseMainPage />}
 
           {selectedMenu.id === "5.1" && <CaseSpecificPage c={cases[0]} />}

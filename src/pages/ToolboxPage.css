@@ -8,7 +8,7 @@
 
 .center-content {
   flex-grow: 1;
-  background: radial-gradient(circle at top left, #50ada8, #489e9a 40%, #387d79);
+  background: radial-gradient(circle at top left, var(--primary-dark), var(--primary-darkest));
   color: white;
   display: flex;
   flex-direction: column;
