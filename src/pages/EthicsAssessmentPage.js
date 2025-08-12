@@ -1,19 +1,31 @@
 import { useNavigate } from "react-router-dom";
 import {useState, useRef} from "react";
 import "./EthicsAssessmentPage.css";
-import EIAIntroduction from "./eia_pages/EIAIntroduction";
-import EIARoles from "./eia_pages/EIARoles";
-import EIAStages from "./eia_pages/EIAStages";
+import EIAIntroduction from "./eia_subpages/EIAIntroduction";
+import EIARoles from "./eia_subpages/EIARoles";
+import EIAStages from "./eia_subpages/EIAStages";
 import LeftMenu from "../components/LeftMenu";
 import eia_menuItems from "../data/eia_menuitems";
 
 const EthicsAssessmentPage = () => {
 
-  const navigate = useNavigate();
   const [selectedMenu, setSelectedMenu] = useState(eia_menuItems[0]);
   const sectionRefs = useRef({});
 
   const [activeSectionId, setActiveSectionId] = useState(null);
+  const [expandedSubmenu, setExpandedSubmenu] = useState(null);
+
+  const handleMenuClick = (menuItem) => {
+    setSelectedMenu(menuItem);
+    if (menuItem.subItems) {
+      setExpandedSubmenu(
+        expandedSubmenu === menuItem.title ? null : menuItem.title
+      );
+    } else {
+      setExpandedSubmenu(null);
+    }
+  };
+
 
 
   return (
@@ -25,6 +37,8 @@ const EthicsAssessmentPage = () => {
         setSelectedMenu={setSelectedMenu}
         activeSectionId={activeSectionId}
         sectionRefs={sectionRefs}
+        expandedSubmenu={expandedSubmenu}
+        handleMenuClick={handleMenuClick}
       />
 
       {/* Center Content */}

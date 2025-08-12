@@ -5,7 +5,7 @@ import "./CaseSpecificPage.css"
 const CaseSpecificPage = (props) => {
   const c = props.c; 
   return (
-    <div className="use-case-content">
+    <div>
       <p className="use-case-text">{c.text}</p>
 
       {/* Table */}

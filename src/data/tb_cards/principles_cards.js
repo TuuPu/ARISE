@@ -1,7 +1,7 @@
 const principles_cards = [
   {
     id: "1.1",
-    title: "Respect for Human Agency",
+    title: "1. Respect for Human Agency",
     text: (
       <p>
         Human beings must be respected to make their own decisions and carry out
@@ -13,7 +13,7 @@ const principles_cards = [
   },
   {
     id: "1.2",
-    title: "Privacy and Data Governance",
+    title: "2. Privacy and Data Governance",
     text: (
       <p>
         People have the right to privacy and data protection and these should be
@@ -23,7 +23,7 @@ const principles_cards = [
   },
   {
     id: "1.3",
-    title: "Fairness",
+    title: "3. Fairness",
     text: (
       <p>
         People should be given equal rights and opportunities and should not be
@@ -33,7 +33,7 @@ const principles_cards = [
   },
   {
     id: "1.4",
-    title: "Individual, Social and Environmental Well-being",
+    title: "4. Individual, Social and Environmental Well-being",
     text: (
       <p>
         Systems should contribute to, and not harm, individual, social and
@@ -43,7 +43,7 @@ const principles_cards = [
   },
   {
     id: "1.5",
-    title: "Transparency",
+    title: "5. Transparency",
     text: (
       <p>
         The purpose, inputs and operations of AI and robotics systems should be
@@ -53,7 +53,7 @@ const principles_cards = [
   },
   {
     id: "1.6",
-    title: "Accountability and Oversight",
+    title: "6. Accountability and Oversight",
     text: (
       <p>
         Humans should be able to understand, supervise and control the design
@@ -65,7 +65,7 @@ const principles_cards = [
   },
   {
     id: "1.7",
-    title: "Worker Dignity and Equity",
+    title: "7. Worker Dignity and Equity",
     text: (
       <p>
         In line with the core principles of Industry 5.0, dignity and equity are
@@ -77,7 +77,7 @@ const principles_cards = [
   },
   {
     id: "1.8",
-    title: "Human Resilience Through Continuous Learning and Support",
+    title: "8. Human Resilience Through Continuous Learning and Support",
     text: (
       <p>
         Human skills and their development should complement, not compete with
