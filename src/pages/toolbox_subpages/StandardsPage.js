@@ -14,8 +14,75 @@ const GuidelinesPage = (props) => {
         subscription or fee.{" "}
       </p>
       <table className="table">
-        <thead></thead>
-        <tbody></tbody>
+        <thead>
+          <tr>
+            <th>Standards for AI and Autonomous Systems</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="https://www.iso.org/standard/77608.html">
+                ISO/IEC TR 24028:2020
+              </a>{" "}
+              Information technology — Artificial intelligence — Overview of
+              trustworthiness in artificial intelligence
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://www.iso.org/standard/77607.html">
+                ISO/IEC 24027:2021
+              </a>{" "}
+              Information technology — Artificial intelligence (AI) — Bias in AI
+              systems and AI aided decision making
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://www.iso.org/standard/78507.html">
+                ISO/IEC TR 24368:2021
+              </a>{" "}
+              Information technology — Artificial intelligence — Overview of
+              ethical and societal concerns
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://www.iso.org/standard/81283.html">
+                ISO/IEC AWI TR 5469
+              </a>{" "}
+              Artificial intelligence — Functional safety and AI systems
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://www.iso.org/standard/82148.html">
+                ISO/IEC AWI TS 6254
+              </a>{" "}
+              Information technology — Artificial intelligence — Objectives and
+              approaches for explainability and interpretability of ML models
+              and AI systems
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://ieeexplore.ieee.org/document/9726144">
+                IEEE 7001-2021
+              </a>{" "}
+              IEEE Standard for Transparency of Autonomous Systems
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://ieeexplore.ieee.org/document/9084219">
+                IEEE 7010-2020
+              </a>{" "}
+              IEEE Recommended Practice for Assessing the Impact of Autonomous
+              and Intelligent Systems on Human Well-Being
+            </td>
+          </tr>
+        </tbody>
       </table>
       <h3>Standards for Robotics Saftey and Human-Centricity</h3>
       <p>
@@ -76,60 +143,87 @@ const GuidelinesPage = (props) => {
         <tbody>
           <tr>
             <td>
-              <a href=" https://www.iso.org/standard/41571.html">ISO 10218 - 1 & 2 </a> Robots and robotic devices — Safety requirements
-              for industrial robots Part 1: Robots & Part 2: Robot systems and
-              integration
+              <a href=" https://www.iso.org/standard/41571.html">
+                ISO 10218 - 1 & 2{" "}
+              </a>{" "}
+              Robots and robotic devices — Safety requirements for industrial
+              robots Part 1: Robots & Part 2: Robot systems and integration
             </td>
           </tr>
           <tr>
             <td>
-              <a href="https://www.iso.org/standard/53820.html">ISO 13482:2014</a> Robots and robotic devices — Safety requirements
-              for personal care robots
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="https://www.iso.org/standard/69488.html">ISO/TS 15066:2016</a> Robots and robotic devices — Collaborative
+              <a href="https://www.iso.org/standard/53820.html">
+                ISO 13482:2014
+              </a>{" "}
+              Robots and robotic devices — Safety requirements for personal care
               robots
             </td>
           </tr>
           <tr>
             <td>
-              <a href="https://www.iso.org/standard/69488.html">ISO/TR 20218-1:2018</a> Robotics — Safety design for industrial robot
-              systems Part 1: End-effectors
+              <a href="https://www.iso.org/standard/69488.html">
+                ISO/TS 15066:2016
+              </a>{" "}
+              Robots and robotic devices — Collaborative robots
             </td>
           </tr>
           <tr>
             <td>
-              <a href="https://www.iso.org/standard/73481.html">ISO 13849-1:2023</a> and <a href="https://www.iso.org/standard/53640.html">ISO 13849-2:2012</a>  Safety of machinery —
-              Safety-related parts of control systems Part 1: General principles
-              for design & Part 2: Validation
+              <a href="https://www.iso.org/standard/69488.html">
+                ISO/TR 20218-1:2018
+              </a>{" "}
+              Robotics — Safety design for industrial robot systems Part 1:
+              End-effectors
             </td>
           </tr>
           <tr>
             <td>
-              <a href="https://www.iso.org/standard/51528.html"> ISO 12100:2010</a> Safety of machinery — General principles for design
-              — Risk assessment and risk reduction
+              <a href="https://www.iso.org/standard/73481.html">
+                ISO 13849-1:2023
+              </a>{" "}
+              and{" "}
+              <a href="https://www.iso.org/standard/53640.html">
+                ISO 13849-2:2012
+              </a>{" "}
+              Safety of machinery — Safety-related parts of control systems Part
+              1: General principles for design & Part 2: Validation
             </td>
           </tr>
           <tr>
             <td>
-              <a href="https://webstore.iec.ch/en/publication/5515">IEC 61508-1:2010</a> Functional safety of
-              electrical/electronic/programmable electronic safety-related
-              systems - Part 1: General requirements (see Functional Safety and
-              IEC 61508)
+              <a href="https://www.iso.org/standard/51528.html">
+                {" "}
+                ISO 12100:2010
+              </a>{" "}
+              Safety of machinery — General principles for design — Risk
+              assessment and risk reduction
             </td>
           </tr>
           <tr>
             <td>
-              <a href="https://www.iso.org/standard/64241.html">ISO 27501:2019</a> the human-centred organization — Guidance for
-              managers
+              <a href="https://webstore.iec.ch/en/publication/5515">
+                IEC 61508-1:2010
+              </a>{" "}
+              Functional safety of electrical/electronic/programmable electronic
+              safety-related systems - Part 1: General requirements (see
+              Functional Safety and IEC 61508)
             </td>
           </tr>
           <tr>
             <td>
-              <a href="https://www.iso.org/standard/77520.html">ISO 9241-210:2019</a> Ergonomics of human-system interaction Part 210:
-              Human-centred design for interactive systems
+              <a href="https://www.iso.org/standard/64241.html">
+                ISO 27501:2019
+              </a>{" "}
+              the human-centred organization — Guidance for managers
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://www.iso.org/standard/77520.html">
+                ISO 9241-210:2019
+              </a>{" "}
+              Ergonomics of human-system interaction Part 210: Human-centred
+              design for interactive systems
             </td>
           </tr>
         </tbody>
