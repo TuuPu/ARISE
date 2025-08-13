@@ -81,19 +81,20 @@ h2 {
 }
 
 h3 {
-  font-family: 'Exo 2';
+  font-family:'Exo 2';
   padding: 1rem 0;
   font-size: 1.4rem;
 }
 
 .primary-button {
-  padding: 1rem; 
+  padding: 0.7rem; 
   border-radius: 0.3rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: 'Exo 2';
   font-weight: 600;
   stroke-width: 0px;
-  margin: 1.3rem 0; 
+  margin: 2rem 0; 
+  margin-right: 3rem;
   border: none;
   color: var(--white);
   background-color: var(--secondary-dark);
