@@ -6,7 +6,7 @@ const CaseSpecificPage = (props) => {
   const c = props.c; 
   return (
     <div>
-      <p>{c.text}</p>
+      {c.text}
 
       {/* Table */}
       <table className="table">

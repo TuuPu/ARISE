@@ -11,6 +11,8 @@ import StandardsPage from "./toolbox_subpages/StandardsPage";
 import GuidelinesPage from "./toolbox_subpages/GuidelinesPage";
 import LegislationPage from "./toolbox_subpages/LegislationPage";
 
+// import { handleMenuClick } from "../functions";
+
 import tb_menuItems from "../data/tb_menuItems";
 import cases from "../data/cases";
 
@@ -22,21 +24,37 @@ const ToolboxPage = () => {
   const [expandedSubmenu, setExpandedSubmenu] = useState(null);
 
   const handleMenuClick = (itemID) => {
+    let prev_element = document.getElementById(selectedMenu.id);
+    prev_element.style.backgroundColor = "rgba(0,0,0,0)";
+
     let parentMenuItem = tb_menuItems.find(({ id }) => id === itemID);
+
     let actualMenuItem = parentMenuItem;
     if (itemID.indexOf(".") !== -1) {
       //If the item id contains period, it is for a sub page
       const parentID = itemID[0];
       parentMenuItem = tb_menuItems.find(({ id }) => id === parentID);
       actualMenuItem = parentMenuItem.subItems.find(({ id }) => id === itemID);
+
+      setTimeout(() => {
+        const el = sectionRefs.current[itemID];
+        if (el)
+          el.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+      }, 100);
     }
 
     setSelectedMenu(actualMenuItem);
+
+    let element = document.getElementById(itemID);
+    element.style.backgroundColor = "rgba(44, 21, 21, 0.15)";
+
     if (parentMenuItem.subItems) {
       setExpandedSubmenu(parentMenuItem.title);
     } else {
       setExpandedSubmenu(null);
-
     }
   };
 

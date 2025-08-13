@@ -16,18 +16,37 @@ const EthicsAssessmentPage = () => {
   const [expandedSubmenu, setExpandedSubmenu] = useState(null);
 
   const handleMenuClick = (itemID) => {
+    let prev_element = document.getElementById(selectedMenu.id);
+    prev_element.style.backgroundColor = "rgba(0,0,0,0)";
+
     let parentMenuItem = eia_menuItems.find(({ id }) => id === itemID);
+
     let actualMenuItem = parentMenuItem;
     if (itemID.indexOf(".") !== -1) {
       //If the item id contains period, it is for a sub page
       const parentID = itemID[0];
       parentMenuItem = eia_menuItems.find(({ id }) => id === parentID);
       actualMenuItem = parentMenuItem.subItems.find(({ id }) => id === itemID);
+
+      setTimeout(() => {
+        const el = sectionRefs.current[itemID];
+        if (el)
+          el.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+      }, 100);
     }
 
     setSelectedMenu(actualMenuItem);
+
+    let element = document.getElementById(itemID);
+    element.style.backgroundColor = "rgba(44, 21, 21, 0.15)";
+
     if (parentMenuItem.subItems) {
       setExpandedSubmenu(parentMenuItem.title);
+    } else {
+      setExpandedSubmenu(null);
     }
   };
 
