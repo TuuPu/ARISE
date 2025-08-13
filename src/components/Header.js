@@ -16,7 +16,7 @@ const Header = () => {
         <Link to="/toolbox" className={location.pathname === "/toolbox" ? "active" : ""}>SSH Toolbox</Link>
         <Link to="/ethics_assessment" className={location.pathname === "/ethics_assessment" ? "active" : ""}>Ethical Impact Assessment</Link>
         <a href="https://arise-middleware.eu" target="_blank" rel="noopener noreferrer">Project Website</a>
-        <a href="mailto:contact@example.com" className="contact">Contact</a>
+        <Link to="/contact" className={location.pathname === "/contact" ? "active" : ""}>Contact</Link>
       </nav>
     </header>
   );
