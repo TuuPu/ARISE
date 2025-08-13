@@ -6,7 +6,7 @@
 }
 
 .contact-section-1{
-    padding: 1rem;
+    padding: 2rem;
     width: 50%;
     border-right: 2px solid rgba(255, 255, 255, 0.557);
     height: 100%;
@@ -14,14 +14,14 @@
 
 
 .contact-section-1 p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .contact-section-2 {
-    padding: 1rem 3rem;
+    padding: 2rem;
     width: 50%;
 }
 
 .contact-section-2 p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
