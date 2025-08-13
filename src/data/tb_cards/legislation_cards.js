@@ -1,28 +1,28 @@
 const legislation_cards = [
   {
-    id: "2.1",
+    id: "3.1",
     title: "EU Legislation",
     text: (
       <p>
-        Description of what this page contains
+        Binding and non-binding legislation for the EU jurisdiction relating to AI and technology development. 
       </p>
     ),
   },
   {
-    id: "2.2",
+    id: "3.2",
     title: "Ethical Guidelines",
     text: (
       <p>
-        Description of what this page contains
+        Non-binding guidelines for integrating ethical concerns and principles into technology development work, particularly in the context of AI.
       </p>
     ),
   },
   {
-    id: "2.3",
+    id: "3.3",
     title: "Industry Standards",
     text: (
       <p>
-        Description of what this page contains
+        Non-binding standards produced by international organizations for ensuring saftey, transparency, and human-centricity in AI and robotics contexts. 
       </p>
     ),
   }

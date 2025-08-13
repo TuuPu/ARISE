@@ -8,7 +8,7 @@
 
 .center-content {
   flex-grow: 1;
-  background: radial-gradient(circle at top left, #50ada8, #489e9a 40%, #387d79);
+  background: radial-gradient(circle at top left, var(--primary-dark), var(--primary-darkest));
   color: white;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
 }
 
 .center-content-inner {
-    width: 60rem;
+    width: 55rem;
     margin: 1.5rem 0;
 
 }
@@ -56,44 +56,6 @@
 .search-bar:focus {
   border-color: var(--purple);
 }
-
-/* Submenu Styling */
-.submenu {
-  list-style: none;
-  padding: 0.5rem;
-  margin-top: 0.2rem;
-}
-
-.submenu li {
-  padding: 8px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background 0.3s;
-  color: white;
-}
-
-.submenu li:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-/* Center Content Styling */
-.sub-menu-text {
-  font-size: 13px;
-  line-height: 1.5;
-  max-width: 90%;
-  text-align: left;
-  margin-top: 10px;
-}
-
-.submenu li.active {
-  transition: background-color 0.3s ease, color 0.3s ease;
-  background-color: var(--secondary);
-  color: white;
-  border-left: 5px solid #fff;
-  border-radius: 4px;
-  padding: 5px;
-}
-
 
 .card-grid {
   display: grid;

@@ -5,11 +5,11 @@ import "./CaseSpecificPage.css"
 const CaseSpecificPage = (props) => {
   const c = props.c; 
   return (
-    <div className="use-case-content">
-      <p className="use-case-text">{c.text}</p>
+    <div>
+      {c.text}
 
       {/* Table */}
-      <table className="use-case-table">
+      <table className="table">
         <thead>{c.thead}</thead>
         <tbody>{c.tbody}</tbody>
       </table>

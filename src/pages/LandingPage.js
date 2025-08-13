@@ -5,7 +5,7 @@ import "./LandingPage.css";
 import { useNavigate } from "react-router-dom";
 
 const LandingPage = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
     <div className="page-container-landing">
@@ -21,7 +21,21 @@ const LandingPage = () => {
             exploring the current version, you contribute directly to its
             ongoing development.
           </p>
-          <Button onClick={() => navigate("/toolbox")} className="primary-button">Explore the toolkit</Button>
+          <div className="buttons-landing-page">
+            <Button
+            onClick={() => navigate("/toolbox")}
+            className="primary-button"
+          >
+            Explore the Toolkit
+          </Button>
+          <Button
+            onClick={() => navigate("/ethics_assessment")}
+            className="primary-button"
+          >
+            Explore the Ethical Impact Assessment
+          </Button>
+          </div>
+         
         </section>
       </main>
     </div>

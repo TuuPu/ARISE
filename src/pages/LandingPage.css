@@ -18,6 +18,13 @@
   .landing-page-text {
     max-width: 70%;
   }
+
+  .buttons-landing-page{
+    display: flex; 
+    justify-content: space-between;
+    width: 50%;
+  }
+
   
   /* Header Section */
   .header {

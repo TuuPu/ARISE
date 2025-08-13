@@ -1,24 +1,24 @@
 const cases_cards = [
   {
-    id: "4.1",
+    id: "5.1",
     title: "Challenge 1",
     text: (
       <p>
-        Dismantling and assembly of high-value products (Battery Disassembly) 
+        Dismantling and assembly of high-value products (battery disassembly) 
       </p>
     ),
   },
   {
-    id: "4.2",
+    id: "5.2",
     title: "Challenge 2",
     text: (
       <p>
-        Complex product picking in industrial warehouses (Fruit Picking) 
+        Complex product picking in industrial warehouses (fruit picking) 
       </p>
     ),
   },
   {
-    id: "4.3",
+    id: "5.3",
     title: "Challenge 3",
     text: (
       <p>
@@ -27,47 +27,47 @@ const cases_cards = [
     ),
   }, 
   {
-    id: "4.4",
+    id: "5.4",
     title: "Challenge 4",
     text: (
       <p>
-        Smart programming (Robotics kitting assistant)
+        Smart programming (robotics kitting assistant)
       </p>
     ),
   }, 
   {
-    id: "4.5",
+    id: "5.5",
     title: "Challenge 5",
     text: (
       <p>
-        Enhancing robot functionality through multimodal HRI interactions (Interactive learning session)
+        Enhancing robot functionality through multimodal HRI interactions (interactive learning session)
       </p>
     ),
   }, 
   {
-    id: "4.6",
+    id: "5.6",
     title: "Challenge 6",
     text: (
       <p>
-        Robotic systems able to autonomously perform fetch and carry tasks in healthcare environments (Asking for help while carrying medical samples)
+        Robotic systems able to autonomously perform fetch and carry tasks in healthcare environments (asking for help while carrying medical samples)
       </p>
     ),
   }, 
   {
-    id: "4.7",
+    id: "5.7",
     title: "Challenge 7",
     text: (
       <p>
-        Leveraging HRI to improve the efficiency of workers in high precision flexible tasks (PCB Desoldering)
+        Leveraging HRI to improve the efficiency of workers in high precision flexible tasks (PCB desoldering)
       </p>
     ),
   }, 
   {
-    id: "4.8",
+    id: "5.8",
     title: "Challenge 8",
     text: (
       <p>
-        Leveraging HRI for improving ergonomics in high precision tasks (Workpiece holder)
+        Leveraging HRI for improving ergonomics in high precision tasks (workpiece holder)
       </p>
     ),
   }

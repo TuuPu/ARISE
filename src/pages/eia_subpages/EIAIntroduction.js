@@ -9,6 +9,7 @@ const EIAIntroduction = (props) => {
         developed and tailored to the open-call process within the ARISE
         project.
       </p>
+      <img src="./ARISE_EIA.png" className="snake-img" alt="EIA"></img>
       <p>
         Its objective is to guide and provide feedback to developers to ensure
         the alignment with the ethical requirements and commitment to excellence
