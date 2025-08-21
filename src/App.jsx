@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LandingPage from "./pages/LandingPage.jsx";
+import LandingPage from "./pages/LandingPage";
 import ToolboxPage from "./pages/ToolboxPage.jsx";
-import EthicsAssessmentPage from "./pages/EthicsAssessmentPage.jsx";
+import EthicsAssessmentPage from "./pages/EthicsAssessmentPage";
 import ContactPage from "./pages/ContactPage";
-import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 import "./App.css";
 
