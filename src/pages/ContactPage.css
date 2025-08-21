@@ -1,7 +1,7 @@
 .contact-page{
     display:flex;
     justify-content: space-around;
-    padding: 5rem 10rem;
+    padding: 5rem 3rem;
     align-items: center;
 }
 
@@ -9,7 +9,6 @@
     padding: 2rem;
     width: 50%;
     border-right: 2px solid rgba(255, 255, 255, 0.557);
-    height: 100%;
 }
 
 
