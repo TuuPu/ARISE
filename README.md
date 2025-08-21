@@ -1,6 +1,6 @@
 # Getting Started 
 
-This project was originally bootstrapped with [Create React App](https://github.com/facebook/create-react-app). We have since migrated to Vite
+This project was originally bootstrapped with [Create React App](https://github.com/facebook/create-react-app). We have since migrated to Vite.
 
 ## Available Scripts
 
