@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="attribution">
-        <img className="flag" alt="EU flag" src={process.env.PUBLIC_URL + "/Eu_flag.jpg"}></img>
+        <img className="flag" alt="EU flag" src={"/Eu_flag.jpg"}></img>
         <p>Funded by the European Union</p>
       </div>
       <div>
@@ -20,7 +20,7 @@ const Footer = () => {
           <img
             className="demoslogo"
             alt="demos helsinki logo"
-            src={process.env.PUBLIC_URL + "/demos_logo.png"}
+            src={"/demos_logo.png"}
           ></img>
         </a>
         <p>Built by <a href="https://demoshelsinki.fi">Demos Helsinki</a></p>

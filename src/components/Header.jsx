@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="global-header">
 
-      <img onClick={() => navigate("/")} className="logo" src={process.env.PUBLIC_URL + "/ARISE_logo.png"} alt="Arise Logo"></img>
+      <img onClick={() => navigate("/")} className="logo" src={"/ARISE_logo.png"} alt="Arise Logo"></img>
   
       <nav className="global-nav">
         <Link to="/" className={location.pathname === "/" ? "active" : ""}>Home</Link>
