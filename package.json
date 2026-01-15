@@ -1,7 +1,7 @@
 {
   "name": "arise-project",
   "version": "0.1.0",
-  "homepage": "https://arise-ssh.info",
+  "homepage": "https://arise-ssh.info/",
   "private": true,
   "dependencies": {
     "bootstrap": "^5.3.7",
