@@ -19,15 +19,10 @@ You may also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `npm run deploy`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `dist` folder. It then deploys the built app to the gh-pages branch. Running this command should automatically update the live website if you're working from the main repository and the website is still configured to publish to github pages. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
+You can edit/verify each of the above commands (scripts) in the package.json file 
 
 
